@@ -8,7 +8,7 @@
 
 ## 📌 자바
 
-* [Effective JAVA 정리](tech_Study/Java/Effective_JAVA/Effective_Java_3:E_정리.md)  
+* [Effective JAVA 정리](/Java/Effective_JAVA/Effective_Java_3:E_정리.md)  
 * Java 기술 면접 대비 정리
 
 
