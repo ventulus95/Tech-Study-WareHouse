@@ -3,4 +3,4 @@
 
 
 ## 자바
-[Effective JAVA](Java/Effective JAVA/Effective Java 3:E 정리.md)  
+[Effective JAVA](tech_Study/Java/Effective JAVA/Effective Java 3:E 정리.md)  
