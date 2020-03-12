@@ -6,7 +6,7 @@
 분야는 점점 추가 될 예정입니다.
 
 
-## 📌 [자바](/Java/About_java.md)
+## 📌 [자바](/Java/About_Java.md)
 
 * [Effective JAVA 정리](/Java/Effective_JAVA/Effective_Java_3:E_정리.md)  
 * Java 중요 기술
