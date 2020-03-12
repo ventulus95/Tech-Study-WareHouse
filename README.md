@@ -11,16 +11,16 @@
 * [Effective JAVA 정리](/Java/Effective_JAVA/Effective_Java_3:E_정리.md)  
 * Java 중요 기술
 
-## 📌 [네트워크](/Network/about_Network.md)
+## 📌 [네트워크](/Network/About_Network.md)
 
 - 
 - 
 
-## 📌 [DB](/DB/about_DB.md)
+## 📌 [DB](/DB/About_DB.md)
 
 - 
 
-## 📌 [Spring](Spring/about_Spring.md)
+## 📌 [Spring](/Spring/About_Spring.md)
 
 - 
 
