@@ -1,4 +1,4 @@
-# 📌 [네트워크](/Network/about_Network.md)
+# 📌 [네트워크](/Network/About_Network.md)
 
 - 
 - 
