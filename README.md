@@ -8,7 +8,7 @@
 
 ## 📌 [자바](/Java/About_Java.md)
 
-* [Effective JAVA 정리](/Java/Effective_JAVA/Effective_Java_3:E_정리.md)  
+* [Effective JAVA 정리](/Java/Effective_JAVA/Effective_JAVA_3E_목차.md)  
 * Java 중요 기술
 
 ## 📌 [네트워크](/Network/About_Network.md)
