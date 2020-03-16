@@ -257,3 +257,33 @@ p.43~p.46에 걸쳐서 적혀져있다.
 
 각 인스턴스가 각자 닫혔는지를 추적하는 것이 좋은데, Close 메서드에서 이객체가 유효하지 않음을 필드에 기록해서 다른 메서드들이  이 객체를 찾으면. IllegalStateException을 던지게끔 하는게 좋다.
 
+
+
+## 아이템 9. try-finally 보다는 try-with-resource를 사용하라
+
+자바 라이브러리에는 Close를 통해 직접 닫아줘야하는 자원이 많음. Ex) InputStream, OutputStream... 등등..
+
+이런 여러가지의 자원들을 try-finally로 처리하기에는 너무 더러워진다. try가 3개...4개가 되고, fianlly도 엄청 늘어나기 때문에 이 finally를 쓰는 방식은 너무 코드를 더렵힐 가능성이 크다는 것.
+
+이런 문제를 해결하기위해서는 try-with-resource를 사용하는 것이 더욱 효과적
+
+### try-with-resource는 뭐 어떤식으로 사용해야하는가?
+
+```java
+static void copy(String src, String dst) throws IOException{
+  try (InputStream in = new InputStream(src);
+      OutputStream out = new FileOutputStream(dst)){
+    ~~~
+  }
+  catch(IOException e){
+    ....
+  }
+}
+```
+
+그러니까 단순하게 말하자면 `try(Resource)` Try를 쓸때 괄호안에다가 Resource를 넣어서 스스로 Close되게 처리하는 방식이다. 
+
+만약 두개의 Resource가 있는 경우, ;(세미콜론)으로 구별하면 된다. 심지어 Catch문이랑 함께 사용해도 괜찮다. 
+
+실제로 이런 예외들을 발생할때는 보여줄 예외하나만 보존되고 여러가지 예외는 숨겨질 수도 있는데, 대신 이렇게 숨겨진 예외들도 그냥 버려지지 않고, 스택에 꼬리표를 달고 출력됨. 자바 7버전의 Throwalbe에 getSuppressed메서드를 이용하면, 코드에서 직접 볼수도 있다.
+
