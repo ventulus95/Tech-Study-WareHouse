@@ -12,7 +12,7 @@
 
 [4. Recursion](https://www.notion.so/4-Recursion-5d72ac40c0da4db6a54c244cd98abfcf)
 
-[5. Tree](/Tree.md)
+[5. Tree](/Data_Structure/Tree.md)
 
 [6. Set](https://www.notion.so/6-Set-9fbd3aaab6724e5b972957040c75f3d8)
 
